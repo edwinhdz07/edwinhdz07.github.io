@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta tu CURP</title>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            text-align: center;
+            align-items: center;
+            background-color:rgb(216, 85, 85);
+        }
+        form{
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color:rgb(216, 85, 85);
+            color: whitesmoke;
+        }
+        .fila{
+            display: flex;
+            justify-content: space-between;
+        }
+        input, select{
+            width: 70%;
+        }
+        input[type="submit"]
+        {
+            align-items: center;
+            width: 100%!important;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <p>¡Consulta tu CURP aqui!</p>
+    </h1>
+    <div></div>
+    <form>
+        <div class="fila">
+            <p>Nombre</p>
+            <input type="text"/>
+        </div>
+        <div class="fila">
+            <p>Apellido Paterno</p>
+            <input type="text"/>
+        </div>
+        <div class="fila">
+            <p>Apellido Materno</p>
+            <input type="text"/>
+        </div>
+        <div class="fila">
+            <p>Estado</p>
+                <select id="claveEntidad" required=>
+                    <option value="" disabled="" selected="">Selecciona el estado</option>
+                      <option value="AS">Aguascalientes</option>
+                      <option value="BC">Baja California</option>
+                      <option value="BS">Baja California Sur</option>
+                      <option value="CC">Campeche</option>
+                      <option value="CL">Coahuila</option>
+                      <option value="CM">Colima</option>
+                      <option value="CS">Chiapas</option>
+                      <option value="CH">Chihuahua</option>
+                      <option value="DF">Ciudad de México</option>
+                      <option value="DG">Durango</option>
+                      <option value="GT">Guanajuato</option>
+                      <option value="GR">Guerrero</option>
+                      <option value="HG">Hidalgo</option>
+                      <option value="JC">Jalisco</option>
+                      <option value="MC">Estado de México</option>
+                      <option value="MN">Michoacán</option>
+                      <option value="MS">Morelos</option>
+                      <option value="NT">Nayarit</option>
+                      <option value="NL">Nuevo León</option>
+                      <option value="OC">Oaxaca</option>
+                      <option value="PL">Puebla</option>
+                      <option value="QT">Querétaro</option>
+                      <option value="QR">Quintana Roo</option>
+                      <option value="SP">San Luis Potosí</option>
+                      <option value="SL">Sinaloa</option>
+                      <option value="SR">Sonora</option>
+                      <option value="TC">Tabasco</option>
+                      <option value="TS">Tamaulipas</option>
+                      <option value="TL">Tlaxcala</option>
+                      <option value="VZ">Veracruz</option>
+                      <option value="YN">Yucatán</option>
+                      <option value="ZS">Zacatecas</option>
+                      <option value="NE">Nacido en el extranjero</option>
+                  </select>
+        </div>
+        <div class="fila">
+            <p>Fecha de nacimiento</p>
+            <input type="date"/>
+        </div>
+        <div class="fila">
+            <p>Sexo</p>
+            <select>
+                <option>- Selecciona una opcion válida -</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </div>    
+        <div class="fila">
+            <input type="submit" value="Consultar"/>
+        </div>
+</form>
+</body>
+</html>
+
+
+un login de una imagen de toda la pantalla
+usuario -inputusuario-
+password -inputopassword-
+boton ingresar
